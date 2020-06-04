@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web components</title>
+  </head>
+  <body>
+    <div class="p-10 mx-auto bg-gray-200 min-h-screen">
+      <h1 class="mb-20 text-3xl font-bold pt-8 lg:pt-0 text-center">
+        My blog
+      </h1>
+
+      <div class="flex flex-col items-center">
+        <article
+          class="max-w-3xl mb-10 rounded overflow-hidden shadow-lg bg-gray-100"
+        >
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Hello world!</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 py-4 flex justify-between">
+            <div>
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                >#photography</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                >#travel</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                >#winter</span
+              >
+            </div>
+            <div>
+              <span
+                class="text-sm inline-block px-3 py-1 font-semibold text-gray-700 word-count"
+              ></span>
+            </div>
+          </div>
+        </article>
+        <article
+          class="max-w-3xl mb-10 rounded overflow-hidden shadow-lg bg-gray-100"
+        >
+          <div class="px-6 py-4">
+            <hello-world text="Mac and Cheese"></hello-world>
+            <p class="text-gray-700 text-base">
+              In et ornare sem, in porttitor mi. Quisque blandit dictum mi
+              eleifend pharetra. Pellentesque habitant morbi tristique senectus
+              et netus et malesuada fames ac turpis egestas. Etiam malesuada
+              dictum est, et feugiat lorem mattis pulvinar. Aenean pulvinar elit
+              eu hendrerit consectetur. Morbi molestie bibendum lorem, eu
+              efficitur nibh bibendum non.
+            </p>
+          </div>
+          <div class="px-6 py-4 flex justify-between">
+            <div>
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                >#troll</span
+              >
+            </div>
+            <div>
+              <span
+                class="text-sm inline-block px-3 py-1 font-semibold text-gray-700 word-count"
+              >
+              <word-count></word-count>
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
